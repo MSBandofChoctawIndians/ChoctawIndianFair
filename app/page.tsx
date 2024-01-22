@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <Parallax />
+      <h1 className="text-4xl text-center mt-10">Hello World</h1>
     </>
   );
 }

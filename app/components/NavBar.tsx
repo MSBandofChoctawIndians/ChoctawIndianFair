@@ -7,8 +7,17 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <div className="flex items-center flex-shrink-0 text-white mr-6 max-w-7xl">
         <span className="font-semibold text-xl tracking-tight">Logo</span>
+        <div className="hidden lg:block lg:ml-6">
+          <a href="#" className="text-white hover:text-gray-300 mx-2">
+            Link 1
+          </a>
+          <a href="#" className="text-white hover:text-gray-300 mx-2">
+            Link 2
+          </a>
+          {/* Add more links as needed */}
+        </div>
       </div>
       <div className="block lg:hidden">
         <button
