@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Events from "./routes/events";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/ChoctawIndianFair/events",
-        element: <Events />,
+        element: <h2>Events</h2>,
       },
     ],
   },
