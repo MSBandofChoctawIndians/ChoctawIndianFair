@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/ChoctawIndianFair/",
+        path: "/",
         element: <h2>Home</h2>,
       },
       {
-        path: "/ChoctawIndianFair/events",
+        path: "/events",
         element: <h2>Events</h2>,
       },
     ],
