@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { day01events } from "../data/schedule/day01";
 
-function Events() {
+export default function Events() {
   const tabs = [
     { day: "TUE", date: "2024-07-02", schedule: day01events },
     { day: "WED", date: "2024-07-03", schedule: day01events },
@@ -121,4 +121,3 @@ function Events() {
     </div>
   );
 }
-export default Events;

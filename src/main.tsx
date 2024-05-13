@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import Home from "./routes/home";
-import Events from "./routes/events";
+import Events from "./routes/Events";
 import ErrorPage from "./error-page";
 
 const router = createBrowserRouter([
