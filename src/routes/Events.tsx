@@ -33,7 +33,7 @@ export default function Events() {
   return (
     <div className="bg-red-weave bg-size-weave bg-repeat">
       <div className="container mx-auto">
-        <div className="p-4">
+        <div className="py-4">
           <img
             src="./img/event-banner-01.jpg"
             alt="Event banner"
