@@ -93,7 +93,7 @@ export default function BackgroundVid() {
       </video>
       <div
         key={currentVideoIndex}
-        className="text-foreground absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-end bg-gradient-to-b from-transparent via-neutral-900 to-black pb-1 text-center sm:pb-4"
+        className="text-foreground absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-end bg-gradient-to-b from-transparent via-neutral-900 to-[#500000] pb-1 text-center sm:pb-4"
       >
         <Link to={videos[currentVideoIndex].link}>
           <h2 className="animate-fade-in text-base font-semibold leading-7 text-red-700 transition dark:text-amber-200">
@@ -103,7 +103,7 @@ export default function BackgroundVid() {
             {videos[currentVideoIndex].statement}
           </p>
         </Link>
-        <ChevronDownIcon className="text-foreground h-6 w-6 animate-bounce" />
+        <ChevronDownIcon className="text-foreground h-6 w-6 animate-bounce text-white" />
       </div>
     </div>
   );
