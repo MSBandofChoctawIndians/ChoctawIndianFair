@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, MapIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import cifLogoShort from "/img/cifLogoShort.png";
 
 const navItems = [
   {
@@ -42,11 +43,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <Link to="/ChoctawIndianFair/" className="-m-1.5 p-1.5">
             <span className="sr-only">Choctaw Indian Fair</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=orange&shade=300"
-              alt=""
-            />
+            <img src={cifLogoShort} width={48} height={48} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -74,7 +71,7 @@ export default function Example() {
             className="text-sm font-semibold leading-6"
           >
             <MapIcon
-              className="h-5 w-5 flex-none text-gray-300 mt-1"
+              className="mt-1 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"
             />
           </Link>
@@ -95,11 +92,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <Link to="/ChoctawIndianFair/" className="-m-1.5 p-1.5">
               <span className="sr-only">Choctaw Indian Fair</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=orange&shade=300"
-                alt=""
-              />
+              <img src={cifLogoShort} height={48} width={48} alt="" />
             </Link>
             <button
               type="button"
@@ -133,7 +126,7 @@ export default function Example() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 bl</>ock rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-neutral-600"
+                  className="bl</>ock -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-neutral-600"
                 >
                   Buy Tickets
                 </a>

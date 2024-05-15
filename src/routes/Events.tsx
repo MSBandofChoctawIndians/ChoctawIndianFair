@@ -15,11 +15,21 @@ export default function Events() {
     { day: "SAT", date: "2024-07-13", schedule: day01events },
   ];
 
+  const categories: any[] = [
+    { name: "Culture", color: "bg-blue-500", textColor: "text-white" },
+    { name: "Family Fun", color: "bg-green-500", textColor: "text-white" },
+    { name: "Stickball", color: "bg-neutral-800", textColor: "text-white" },
+    { name: "Pageant", color: "bg-purple-500", textColor: "text-white" },
+    { name: "Competitions", color: "bg-red-500", textColor: "text-white" },
+  ];
+
   const [activeTab, setActiveTab] = useState(() => {
     const currentDate = new Date();
     const lastTabDate = new Date(tabs[tabs.length - 1].date);
     return currentDate >= lastTabDate ? tabs.length - 1 : 0;
   });
+
+  // const [checkedCategories, setCheckedCategories] = useState(false);
 
   const handleTabClick = (index: number) => {
     const currentDate = new Date();
@@ -30,6 +40,9 @@ export default function Events() {
     }
   };
 
+  // const handleCategoryClick = (index: number) => {
+  //   setCheckedCategories((prevState: boolean) => !prevState);
+  // };
   return (
     <div className="bg-red-weave bg-size-weave bg-repeat">
       <div className="container mx-auto">
@@ -37,23 +50,23 @@ export default function Events() {
           <img
             src="./img/event-banner-01.jpg"
             alt="Event banner"
-            className="hidden md:block rounded-md border border-neutral-300/20"
+            className="hidden rounded-md border border-neutral-300/20 md:block"
           />
           <img
             src="./img/event-banner-02.jpg"
             alt="Event banner"
-            className="md:hidden rounded-md border border-neutral-300/20"
+            className="rounded-md border border-neutral-300/20 md:hidden"
           />
         </div>
 
-        <div className="grid grid-cols-4 gap-3 md:grid-cols-5 xl:grid-cols-10 mx-2">
+        <div className="mx-2 grid grid-cols-4 gap-3 md:grid-cols-5 xl:grid-cols-10">
           {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`p-4 my-1 flex-grow rounded border-neutral-300/20 border hover:text-neutral-500 ${
+              className={`my-1 flex-grow rounded border border-neutral-300/20 p-4 text-white hover:text-neutral-500 ${
                 activeTab === index
-                  ? "bg-gradient-to-br from-[#fbb03b] via-[#cc6600] to-[#fbb03b] text-black"
-                  : "bg-gradient-to-br from-black via-neutral-800 to-black text-white"
+                  ? "bg-gradient-to-br from-[#400000] via-[#900000] to-[#400000] hover:text-neutral-700"
+                  : "bg-gradient-to-br from-black via-neutral-800 to-black"
               }`}
               onClick={() => handleTabClick(index)}
             >
@@ -66,7 +79,19 @@ export default function Events() {
           ))}
         </div>
 
-        <ul role="list" className="divide-y divide-gray-100 gap-4">
+        <div className="mx-2 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-5">
+          {categories.map((category, index) => (
+            <button
+              key={index}
+              className={`my-1 w-full flex-grow rounded border border-neutral-300/20 p-4 ${category.color} ${category.textColor} mx-auto hover:text-neutral-500`}
+              // onClick={() => handleCategoryClick(index)}
+            >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        <ul role="list" className="gap-4 divide-y divide-gray-100">
           <li className="flex justify-between gap-x-6 py-5">
             <div className="flex min-w-0 gap-x-4">
               <div>
@@ -90,7 +115,7 @@ export default function Events() {
           {tabs[activeTab].schedule.map((event, index) => (
             <li
               key={index}
-              className="justify-between gap-x-6 grid grid-cols-4 gap-4"
+              className="grid grid-cols-4 justify-between gap-4 gap-x-6"
             >
               <div className="flex min-w-0 gap-x-4">
                 <div className="min-w-0 flex-none">

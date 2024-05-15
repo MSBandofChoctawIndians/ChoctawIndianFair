@@ -30,13 +30,13 @@ const router = createBrowserRouter(
         element={<h2>Competitions</h2>}
       />
       <Route path="/ChoctawIndianFair/map" element={<h2>Map</h2>} />
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 // @ts-ignore
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
