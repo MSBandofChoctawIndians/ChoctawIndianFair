@@ -7,11 +7,13 @@ export default function Feature() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-8 px-4 xl:grid-cols-2">
           <div className="flex items-center justify-center p-8">
-            <div className="rounded-md bg-gradient-to-br from-yellow-200/80 via-yellow-300/70 to-yellow-200/80 p-2">
+            <div className="rounded-md bg-gradient-to-br from-yellow-400/70 via-yellow-100/80 to-yellow-400/70 p-2">
               <img
                 src={chiefprincess}
                 alt="Chief and Princess"
                 className="h-auto w-full"
+                height={500}
+                width={500}
               />
             </div>
           </div>

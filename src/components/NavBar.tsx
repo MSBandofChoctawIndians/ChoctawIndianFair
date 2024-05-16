@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, MapIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  MapIcon,
+  TicketIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import cifLogoShort from "/img/cifLogoShort.png";
 
@@ -35,7 +40,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-rope bg-center text-white">
+    <header className="bg-rope bg-center font-serif text-white">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -77,12 +82,14 @@ export default function Example() {
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#"
-            className="text-sm font-semibold leading-6 hover:text-gray-500"
+          <button
+            type="button"
+            disabled
+            className="inline-flex items-center gap-x-1.5 space-y-1 rounded-md bg-gradient-to-br from-[#dc7] to-[#fa0] px-3 py-2 text-sm font-semibold text-black shadow-sm hover:from-neutral-100 hover:to-neutral-400 disabled:opacity-50 sm:space-y-0"
           >
-            Buy Tickets
-          </a>
+            <TicketIcon className="h-5 w-5" aria-hidden="true" />
+            <span>Buy Tickets</span>
+          </button>
         </div>
       </nav>
       <Dialog
@@ -91,7 +98,7 @@ export default function Example() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-neutral-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-neutral-300/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-neutral-800 px-6 py-6 font-serif sm:max-w-sm sm:ring-1 sm:ring-neutral-300/10">
           <div className="flex items-center justify-between">
             <Link to="/ChoctawIndianFair/" className="-m-1.5 p-1.5">
               <span className="sr-only">Choctaw Indian Fair</span>
@@ -127,12 +134,14 @@ export default function Example() {
                 </Link>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="bl</>ock -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-neutral-600"
+                <button
+                  type="button"
+                  disabled
+                  className="inline-flex items-center gap-x-1.5 space-y-1 rounded-md bg-gradient-to-br from-[#dc7] to-[#fa0] px-3 py-2 text-sm font-semibold text-black shadow-sm hover:from-neutral-100 hover:to-neutral-400 disabled:opacity-50 sm:space-y-0"
                 >
-                  Buy Tickets
-                </a>
+                  <TicketIcon className="h-5 w-5" aria-hidden="true" />
+                  <span>Buy Tickets</span>
+                </button>
               </div>
             </div>
           </div>
