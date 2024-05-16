@@ -95,11 +95,11 @@ export default function BackgroundVid() {
         key={currentVideoIndex}
         className="text-foreground absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-end bg-gradient-to-b from-transparent via-neutral-900 to-[#500000] pb-1 text-center sm:pb-4"
       >
-        <Link to={videos[currentVideoIndex].link}>
+        <Link to={videos[currentVideoIndex].link} className="group">
           <h2 className="animate-fade-in text-base font-semibold leading-7 text-red-700 transition dark:text-amber-200">
             {videos[currentVideoIndex].title}
           </h2>
-          <p className="animate-fade-in text-foreground mt-2 pb-4 font-serif text-4xl font-bold tracking-tight text-white transition sm:text-5xl">
+          <p className="animate-fade-in text-foreground mt-2 pb-4 font-serif text-4xl font-bold tracking-tight text-white transition group-hover:text-neutral-300 sm:text-5xl">
             {videos[currentVideoIndex].statement}
           </p>
         </Link>

@@ -1,4 +1,5 @@
 import chiefprincess from "/img/chiefprincess.webp";
+import Countdown from "./Countdown";
 
 export default function Feature() {
   return (
@@ -40,6 +41,7 @@ export default function Feature() {
             <p className="mt-8 font-serif text-5xl font-bold">Yakoki!</p>
           </div>
         </div>
+        <Countdown />
       </div>
     </div>
   );

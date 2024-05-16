@@ -35,7 +35,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-neutral-900 text-white">
+    <header className="bg-rope bg-center text-white">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -61,7 +61,7 @@ export default function Example() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm font-semibold leading-6"
+              className="rounded-md text-sm font-semibold leading-6 hover:text-gray-500"
             >
               {item.name}
             </Link>
@@ -71,13 +71,16 @@ export default function Example() {
             className="text-sm font-semibold leading-6"
           >
             <MapIcon
-              className="mt-1 h-5 w-5 flex-none text-gray-300"
+              className="mt-1 h-5 w-5 flex-none text-gray-300 hover:text-gray-500"
               aria-hidden="true"
             />
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 hover:text-gray-500"
+          >
             Buy Tickets
           </a>
         </div>
