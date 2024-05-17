@@ -3,7 +3,7 @@ import Countdown from "./Countdown";
 
 export default function Feature() {
   return (
-    <div className="overflow-hidden bg-red-weave bg-size-weave bg-repeat sm:py-32">
+    <div className="bg-red-weave bg-size-weave bg-repeat sm:py-32">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-8 px-4 xl:grid-cols-2">
           <div className="flex items-center justify-center p-8">
@@ -12,8 +12,8 @@ export default function Feature() {
                 src={chiefprincess}
                 alt="Chief and Princess"
                 className="h-auto w-full"
-                height={500}
-                width={500}
+                height={600}
+                width={600}
               />
             </div>
           </div>

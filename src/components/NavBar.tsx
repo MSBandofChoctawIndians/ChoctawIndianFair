@@ -7,7 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import cifLogoShort from "/img/cifLogoShort.png";
+import cifLogoShort from "/img/cifLogoShort.webp";
 
 const navItems = [
   {
@@ -61,12 +61,12 @@ export default function Example() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden gap-x-10 lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className="rounded-md text-sm font-semibold leading-6 hover:text-gray-500"
+              className="text-sm font-semibold leading-6 hover:text-gray-500 xl:text-base"
             >
               {item.name}
             </Link>
@@ -76,7 +76,7 @@ export default function Example() {
             className="text-sm font-semibold leading-6"
           >
             <MapIcon
-              className="mt-1 h-5 w-5 flex-none text-gray-300 hover:text-gray-500"
+              className="mt-1 h-5 w-5 flex-none text-gray-300 hover:text-gray-500 xl:mt-0 xl:h-7 xl:w-7"
               aria-hidden="true"
             />
           </Link>
