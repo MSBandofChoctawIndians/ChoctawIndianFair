@@ -79,13 +79,14 @@ export default function Example() {
               className="mt-1 h-5 w-5 flex-none text-gray-300 hover:text-gray-500 xl:mt-0 xl:h-7 xl:w-7"
               aria-hidden="true"
             />
+            <span className="sr-only">Fair Map</span>
           </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button
             type="button"
             disabled
-            className="inline-flex items-center gap-x-1.5 space-y-1 rounded-md bg-gradient-to-br from-[#dc7] to-[#fa0] px-3 py-2 text-sm font-semibold text-black shadow-sm hover:from-neutral-100 hover:to-neutral-400 disabled:opacity-50 sm:space-y-0"
+            className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
           >
             <TicketIcon className="h-5 w-5" aria-hidden="true" />
             <span>Buy Tickets</span>
@@ -137,7 +138,7 @@ export default function Example() {
                 <button
                   type="button"
                   disabled
-                  className="inline-flex items-center gap-x-1.5 space-y-1 rounded-md bg-gradient-to-br from-[#dc7] to-[#fa0] px-3 py-2 text-sm font-semibold text-black shadow-sm hover:from-neutral-100 hover:to-neutral-400 disabled:opacity-50 sm:space-y-0"
+                  className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
                 >
                   <TicketIcon className="h-5 w-5" aria-hidden="true" />
                   <span>Buy Tickets</span>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { day01events } from "../data/schedule/day01";
+import { XCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Events() {
   const tabs = [
@@ -16,11 +17,14 @@ export default function Events() {
   ];
 
   const categories = [
-    { name: "Culture", color: "bg-blue-500", textColor: "text-white" },
-    { name: "Family Fun", color: "bg-green-500", textColor: "text-white" },
-    { name: "Stickball", color: "bg-neutral-800", textColor: "text-white" },
-    { name: "Pageant", color: "bg-purple-500", textColor: "text-white" },
-    { name: "Competitions", color: "bg-red-500", textColor: "text-white" },
+    { name: "Culture", color: "from-blue-950 via-blue-600 to-blue-950" },
+    { name: "Family Fun", color: "from-green-950 via-green-600 to-green-950" },
+    { name: "Stickball", color: "from-[#400000] via-[#900000] to-[#400000]" },
+    { name: "Pageant", color: "from-[#400000] via-[#900000] to-[#400000]" },
+    {
+      name: "Competitions",
+      color: "from-[#400000] via-[#900000] to-[#400000]",
+    },
   ];
 
   const [activeTab, setActiveTab] = useState(() => {
@@ -29,7 +33,9 @@ export default function Events() {
     return currentDate >= lastTabDate ? tabs.length - 1 : 0;
   });
 
-  // const [checkedCategories, setCheckedCategories] = useState(false);
+  const [activeCategory, setActiveCategory] = useState(
+    new Array(categories.length).fill(false),
+  );
 
   const handleTabClick = (index: number) => {
     const currentDate = new Date();
@@ -40,9 +46,12 @@ export default function Events() {
     }
   };
 
-  // const handleCategoryClick = (index: number) => {
-  //   setCheckedCategories((prevState: boolean) => !prevState);
-  // };
+  const handleCategoryClick = (index: number) => {
+    setActiveCategory((prevState) =>
+      prevState.map((value, i) => (i === index ? !value : value)),
+    );
+  };
+
   return (
     <div className="bg-red-weave bg-size-weave bg-repeat">
       <div className="container mx-auto">
@@ -50,7 +59,7 @@ export default function Events() {
           <img
             src="./img/event-banner-01.jpg"
             alt="Event banner"
-            className="hidden rounded-md border border-neutral-300/20 md:block"
+            className="hidden rounded-md border-2 border-neutral-300/20 md:block"
           />
           <img
             src="./img/event-banner-02.jpg"
@@ -59,11 +68,11 @@ export default function Events() {
           />
         </div>
 
-        <div className="mx-2 grid grid-cols-4 gap-3 md:grid-cols-5 xl:grid-cols-10">
+        <div className="mx-2 grid grid-cols-3 gap-3 sm:grid-cols-4 md:mx-0 md:grid-cols-5 xl:grid-cols-10">
           {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`my-1 flex-grow rounded border border-neutral-300/20 p-4 text-white hover:text-neutral-500 ${
+              className={`my-1 flex-grow rounded border-2 border-neutral-300/20 p-4 text-white hover:text-neutral-500 ${
                 activeTab === index
                   ? "bg-gradient-to-br from-[#400000] via-[#900000] to-[#400000] hover:text-neutral-700"
                   : "bg-gradient-to-br from-black via-neutral-800 to-black"
@@ -79,69 +88,43 @@ export default function Events() {
           ))}
         </div>
 
-        <div className="mx-2 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-5">
+        <div className="mx-2 grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-3 sm:pt-2 md:mx-0 md:grid-cols-11">
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`my-1 w-full flex-grow rounded border border-neutral-300/20 p-4 ${category.color} ${category.textColor} mx-auto hover:text-neutral-500`}
-              // onClick={() => handleCategoryClick(index)}
+              className={`col-span-2 mx-auto my-1 w-full flex-grow rounded border-2 border-neutral-300/20 p-4 hover:bg-opacity-75 ${
+                activeCategory[index]
+                  ? `${category.color} bg-gradient-to-br hover:text-neutral-700`
+                  : "bg-gradient-to-br from-black via-neutral-800 to-black"
+              }`}
+              onClick={() => handleCategoryClick(index)}
             >
               {category.name}
             </button>
           ))}
+          <button
+            className="col-span-2 mx-auto my-1 w-full flex-grow rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black p-4 hover:bg-opacity-75 md:col-span-1"
+            onClick={() =>
+              setActiveCategory(new Array(categories.length).fill(false))
+            }
+          >
+            <XCircleIcon className="mx-auto h-6 w-6 text-white" />
+          </button>
         </div>
 
-        <ul role="list" className="gap-4 divide-y divide-gray-100">
-          <li className="flex justify-between gap-x-6 py-5">
-            <div className="flex min-w-0 gap-x-4">
-              <div>
-                <p className="text-sm font-black leading-6 text-white">Event</p>
-              </div>
-              <div>
-                <p className="text-sm font-black leading-6 text-white">Time</p>
-              </div>
-              <div>
-                <p className="text-sm font-black leading-6 text-white">
-                  Category
-                </p>
-              </div>
-              <div>
-                <p className="text-sm font-black leading-6 text-white">
-                  Location
-                </p>
-              </div>
-            </div>
-          </li>
+        <div className="grid grid-cols-1 gap-4 py-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {tabs[activeTab].schedule.map((event, index) => (
-            <li
+            <div
               key={index}
-              className="grid grid-cols-4 justify-between gap-4 gap-x-6"
+              className="rounded-lg border-2 border-neutral-300/20 bg-black p-4 shadow-md"
             >
-              <div className="flex min-w-0 gap-x-4">
-                <div className="min-w-0 flex-none">
-                  <p className="text-sm font-semibold leading-6 text-gray-900">
-                    {event.name}
-                  </p>
-                </div>
-                <div className="flex-none">
-                  <p className="text-sm font-semibold leading-6 text-gray-500">
-                    {event.time}
-                  </p>
-                </div>
-                <div className="flex-none">
-                  <p className="text-sm font-semibold leading-6 text-gray-500">
-                    {event.category}
-                  </p>
-                </div>
-                <div className="flex-none">
-                  <p className="text-sm font-semibold leading-6 text-gray-500">
-                    {event.location}
-                  </p>
-                </div>
-              </div>
-            </li>
+              <h3 className="text-lg font-semibold">{event.name}</h3>
+              <p className="text-gray-500">{event.time}</p>
+              <p className="text-gray-500">{event.category}</p>
+              <p className="text-gray-500">{event.location}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
