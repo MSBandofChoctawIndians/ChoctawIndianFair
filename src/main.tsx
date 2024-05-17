@@ -34,7 +34,7 @@ const router = createBrowserRouter(
   ),
 );
 
-// @ts-ignore
+// @ts-expect-error - This is a root element
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />

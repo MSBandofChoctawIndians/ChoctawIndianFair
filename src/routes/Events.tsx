@@ -15,7 +15,7 @@ export default function Events() {
     { day: "SAT", date: "2024-07-13", schedule: day01events },
   ];
 
-  const categories: any[] = [
+  const categories = [
     { name: "Culture", color: "bg-blue-500", textColor: "text-white" },
     { name: "Family Fun", color: "bg-green-500", textColor: "text-white" },
     { name: "Stickball", color: "bg-neutral-800", textColor: "text-white" },

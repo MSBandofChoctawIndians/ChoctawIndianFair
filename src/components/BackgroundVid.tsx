@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-let videos = [
+const videos = [
   {
     url: "./vid/OpeningCeremonies.mp4",
     title: "Opening Ceremonies",
@@ -56,7 +56,7 @@ export default function BackgroundVid() {
   };
 
   useEffect(() => {
-    let currentVideoElement = videoRef.current;
+    const currentVideoElement = videoRef.current;
 
     if (currentVideoElement) {
       currentVideoElement.addEventListener("ended", nextVideo);
@@ -67,7 +67,7 @@ export default function BackgroundVid() {
   }, []);
 
   useEffect(() => {
-    let currentVideoElement = videoRef.current;
+    const currentVideoElement = videoRef.current;
     if (currentVideoElement) {
       currentVideoElement.src = videos[currentVideoIndex].url;
       currentVideoElement.load();

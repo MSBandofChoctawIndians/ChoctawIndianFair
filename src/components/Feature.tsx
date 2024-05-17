@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import chiefprincess from "/img/chiefprincess.webp";
 import Countdown from "./Countdown";
 
-useEffect(() => {
-  const image = new Image();
-  image.src = chiefprincess;
-}, []);
-
 export default function Feature() {
+  useEffect(() => {
+    const image = new Image();
+    image.src = chiefprincess;
+  }, []);
+
   return (
     <div className="bg-red-weave bg-size-weave bg-repeat sm:py-32">
       <div className="container mx-auto">
