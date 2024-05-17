@@ -1,5 +1,11 @@
+import { useEffect } from "react";
 import chiefprincess from "/img/chiefprincess.webp";
 import Countdown from "./Countdown";
+
+useEffect(() => {
+  const image = new Image();
+  image.src = chiefprincess;
+}, []);
 
 export default function Feature() {
   return (
