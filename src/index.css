@@ -6,3 +6,19 @@
   @apply bg-black;
   @apply text-white;
 }
+
+.bg-competitions {
+  @apply bg-gradient-to-br from-red-950 via-red-700 to-red-950;
+}
+.bg-culture {
+  @apply bg-gradient-to-br from-blue-950 via-blue-600 to-blue-950;
+}
+.bg-family {
+  @apply bg-gradient-to-br from-green-950 via-green-600 to-green-950;
+}
+.bg-pageant {
+  @apply bg-gradient-to-br from-purple-950 via-fuchsia-600 to-purple-950;
+}
+.bg-stickball {
+  @apply bg-gradient-to-br from-neutral-800 via-[#787] to-neutral-800;
+}

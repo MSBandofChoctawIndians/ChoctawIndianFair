@@ -23,7 +23,7 @@ export default function Feature() {
               />
             </div>
           </div>
-          <div className="flex-col items-center justify-center p-8 text-center text-white">
+          <div className="flex-col items-center justify-center p-8 text-center">
             <p className="font-serif text-7xl font-bold">Halito!</p>
             <p className="mt-6 text-lg text-gray-300">
               Greetings from the Choctaw Indian Reservation. We invite you to

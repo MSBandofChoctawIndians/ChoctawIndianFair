@@ -17,13 +17,25 @@ export default function Events() {
   ];
 
   const categories = [
-    { name: "Culture", color: "from-blue-950 via-blue-600 to-blue-950" },
-    { name: "Family Fun", color: "from-green-950 via-green-600 to-green-950" },
-    { name: "Stickball", color: "from-[#400000] via-[#900000] to-[#400000]" },
-    { name: "Pageant", color: "from-[#400000] via-[#900000] to-[#400000]" },
+    {
+      name: "Culture",
+      style: "culture",
+    },
+    {
+      name: "Family Fun",
+      style: "family",
+    },
+    {
+      name: "Stickball",
+      style: "stickball",
+    },
+    {
+      name: "Pageant",
+      style: "pageant",
+    },
     {
       name: "Competitions",
-      color: "from-[#400000] via-[#900000] to-[#400000]",
+      style: "competitions",
     },
   ];
 
@@ -55,7 +67,7 @@ export default function Events() {
   return (
     <div className="bg-red-weave bg-size-weave bg-repeat">
       <div className="container mx-auto">
-        <div className="py-4">
+        <div className="py-3">
           <img
             src="./img/event-banner-01.jpg"
             alt="Event banner"
@@ -72,10 +84,10 @@ export default function Events() {
           {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`my-1 flex-grow rounded border-2 border-neutral-300/20 p-4 text-white hover:text-neutral-500 ${
+              className={`my-1 flex-grow rounded border-2 border-neutral-300/20 p-4 hover:text-neutral-500 ${
                 activeTab === index
-                  ? "bg-gradient-to-br from-[#400000] via-[#900000] to-[#400000] hover:text-neutral-700"
-                  : "bg-gradient-to-br from-black via-neutral-800 to-black"
+                  ? "bg-competitions hover:text-neutral-700"
+                  : "bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50"
               }`}
               onClick={() => handleTabClick(index)}
             >
@@ -88,14 +100,14 @@ export default function Events() {
           ))}
         </div>
 
-        <div className="mx-2 grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-3 sm:pt-2 md:mx-0 md:grid-cols-11">
+        <div className="mx-2 grid grid-cols-2 gap-1 py-2 sm:grid-cols-4 sm:gap-3 md:mx-0 md:grid-cols-11">
           {categories.map((category, index) => (
             <button
               key={index}
               className={`col-span-2 mx-auto my-1 w-full flex-grow rounded border-2 border-neutral-300/20 p-4 hover:bg-opacity-75 ${
                 activeCategory[index]
-                  ? `${category.color} bg-gradient-to-br hover:text-neutral-700`
-                  : "bg-gradient-to-br from-black via-neutral-800 to-black"
+                  ? `bg-${category.style} bg-gradient-to-br hover:text-neutral-700`
+                  : "bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50"
               }`}
               onClick={() => handleCategoryClick(index)}
             >
@@ -108,20 +120,36 @@ export default function Events() {
               setActiveCategory(new Array(categories.length).fill(false))
             }
           >
-            <XCircleIcon className="mx-auto h-6 w-6 text-white" />
+            <XCircleIcon className="mx-auto h-6 w-6" />
           </button>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 py-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-1 py-2 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {tabs[activeTab].schedule.map((event, index) => (
-            <div
-              key={index}
-              className="rounded-lg border-2 border-neutral-300/20 bg-black p-4 shadow-md"
-            >
-              <h3 className="text-lg font-semibold">{event.name}</h3>
-              <p className="text-gray-500">{event.time}</p>
-              <p className="text-gray-500">{event.category}</p>
-              <p className="text-gray-500">{event.location}</p>
+            <div key={index} className="mx-auto flex w-full flex-col">
+              <div className="flex-grow overflow-hidden border-2 border-neutral-300/20 bg-black sm:rounded sm:shadow">
+                <div
+                  className={`border-b-[1px] border-neutral-300/20 px-4 py-5 sm:px-6 bg-${event.style}`}
+                >
+                  <h3 className="text-base font-semibold leading-6 text-white">
+                    {event.name}
+                  </h3>
+                </div>
+                <ul role="list">
+                  <li className="border-b-[1px] border-neutral-300/20 px-4 py-4 sm:px-6">
+                    <div className="flex justify-between">
+                      <p className="text-sm font-medium text-white">Time</p>
+                      <p className="text-sm text-gray-500">{event.time}</p>
+                    </div>
+                  </li>
+                  <li className="px-4 py-4 sm:px-6">
+                    <div className="flex justify-between">
+                      <p className="text-sm font-medium text-white">Location</p>
+                      <p className="text-sm text-gray-500">{event.location}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           ))}
         </div>

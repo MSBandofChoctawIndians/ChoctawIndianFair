@@ -1,5 +1,6 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -34,8 +35,10 @@ const router = createBrowserRouter(
   ),
 );
 
-// @ts-expect-error - This is a root element
-ReactDOM.createRoot(document.getElementById("root")).render(
+// @ts-expect-error createRoot is not yet typed
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,

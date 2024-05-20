@@ -99,11 +99,11 @@ export default function BackgroundVid() {
           <h2 className="animate-fade-in text-base font-semibold leading-7 text-red-700 transition group-hover:text-amber-300 sm:text-lg dark:text-amber-200">
             {videos[currentVideoIndex].title}
           </h2>
-          <p className="animate-fade-in text-foreground mt-2 pb-4 font-serif text-2xl font-bold tracking-tight text-white transition group-hover:text-neutral-300 sm:text-5xl">
+          <p className="animate-fade-in text-foreground mt-2 pb-4 font-serif text-2xl font-bold tracking-tight transition group-hover:text-neutral-300 sm:text-5xl">
             {videos[currentVideoIndex].statement}
           </p>
         </Link>
-        <ChevronDownIcon className="text-foreground h-6 w-6 animate-bounce text-white" />
+        <ChevronDownIcon className="text-foreground h-6 w-6 animate-bounce" />
       </div>
     </div>
   );

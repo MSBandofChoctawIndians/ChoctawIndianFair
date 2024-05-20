@@ -40,7 +40,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-rope bg-center font-serif text-white">
+    <header className="bg-rope bg-center font-serif">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -86,7 +86,7 @@ export default function Example() {
           <button
             type="button"
             disabled
-            className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
+            className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
           >
             <TicketIcon className="h-5 w-5" aria-hidden="true" />
             <span>Buy Tickets</span>
@@ -122,14 +122,14 @@ export default function Example() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-neutral-600"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-neutral-600"
                   >
                     {item.name}
                   </Link>
                 ))}
                 <Link
                   to="/ChoctawIndianFair/map"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-neutral-600"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-neutral-600"
                 >
                   Fair Map
                 </Link>
@@ -138,7 +138,7 @@ export default function Example() {
                 <button
                   type="button"
                   disabled
-                  className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
+                  className="inline-flex items-center gap-x-1.5 space-y-1 rounded border-2 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black px-3 py-2 text-sm font-semibold shadow-sm hover:text-neutral-500 disabled:opacity-70 sm:space-y-0"
                 >
                   <TicketIcon className="h-5 w-5" aria-hidden="true" />
                   <span>Buy Tickets</span>

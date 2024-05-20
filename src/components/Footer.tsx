@@ -1,7 +1,10 @@
+import DiamondBorder from "./DiamondBorder";
+
 export default function Footer() {
   return (
-    <div>
+    <footer>
+      <DiamondBorder />
       <h1>This is the footer.</h1>
-    </div>
+    </footer>
   );
 }

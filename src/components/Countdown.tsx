@@ -37,29 +37,37 @@ const Countdown: React.FC = () => {
   }, [countdown]);
 
   return (
-    <div className="mx-auto max-w-2xl pt-24 text-white lg:max-w-none">
+    <div className="mx-auto max-w-2xl pt-24 lg:max-w-none">
       <div className="text-center">
         <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl">
           {message}
         </h2>
       </div>
       {countdown > 0 ? (
-        <dl className="mt-16 grid gap-1 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col border-8 border-amber-300 bg-gradient-to-b from-neutral-800/50 via-neutral-500/70 to-neutral-800/50 p-8">
+        <dl className="mx-2 mt-16 grid gap-1 overflow-hidden rounded-2xl text-center sm:mx-0 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8">
             <dt className="text-5xl font-bold">{days}</dt>
-            <dd className="font-serif text-lg text-gray-500">Days</dd>
+            <dd className="font-serif text-xl font-bold text-neutral-400">
+              Days
+            </dd>
           </div>
-          <div className="flex flex-col border-8 border-amber-300 bg-gradient-to-b from-neutral-800/50 via-neutral-500/70 to-neutral-800/50 p-8">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8">
             <dt className="text-5xl font-bold">{hours}</dt>
-            <dd className="font-serif text-lg text-gray-500">Hours</dd>
+            <dd className="font-serif text-xl font-bold text-neutral-400">
+              Hours
+            </dd>
           </div>
-          <div className="flex flex-col border-8 border-amber-300 bg-gradient-to-b from-neutral-800/50 via-neutral-500/70 to-neutral-800/50 p-8">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8">
             <dt className="text-5xl font-bold">{minutes}</dt>
-            <dd className="font-serif text-lg text-gray-500">Minutes</dd>
+            <dd className="font-serif text-xl font-bold text-neutral-400">
+              Minutes
+            </dd>
           </div>
-          <div className="flex flex-col border-8 border-amber-300 bg-gradient-to-b from-neutral-800/50 via-neutral-500/70 to-neutral-800/50 p-8">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8">
             <dt className="text-5xl font-bold">{seconds}</dt>
-            <dd className="font-serif text-lg text-gray-500">Seconds</dd>
+            <dd className="font-serif text-xl font-bold text-neutral-400">
+              Seconds
+            </dd>
           </div>
         </dl>
       ) : null}
