@@ -7,6 +7,10 @@
   @apply text-white;
 }
 
+.bg-events {
+  @apply bg-gradient-to-br from-amber-900/70 via-amber-600 to-amber-900/70;
+}
+
 .bg-competitions {
   @apply bg-gradient-to-br from-red-950 via-red-700 to-red-950;
 }

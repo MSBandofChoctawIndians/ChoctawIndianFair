@@ -86,7 +86,7 @@ export default function Events() {
               key={index}
               className={`my-1 flex-grow rounded border-2 border-neutral-300/20 p-4 hover:text-neutral-500 ${
                 activeTab === index
-                  ? "bg-competitions hover:text-neutral-700"
+                  ? "bg-events hover:text-neutral-700"
                   : "bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50"
               }`}
               onClick={() => handleTabClick(index)}
