@@ -1,13 +1,49 @@
 import DiamondBorder from "./DiamondBorder";
+import { SponsorCarousel } from "./Sponsors";
+import cifShortLogo from "/img/cifLogoShort.webp";
+import seal from "/img/seal.png";
 
 export default function Footer() {
   return (
-    <footer>
+    <>
+      <SponsorCarousel />
       <DiamondBorder />
-      <h1>This is the footer.</h1>
-      <div className="w-full text-center py-3">
-        <p className="text-neutral-500">Created by <a href="https://nativeconsult.io" className="text-indigo-400 hover:text-indigo-200">Native Consulting Services</a></p>
+      <footer className="bg-panel-background mb-2 bg-center sm:mb-0">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between lg:flex-row">
+          <div className="my-4 flex gap-5">
+            <img
+              src={cifShortLogo}
+              alt="Choctaw Indian Fair"
+              width={160}
+              height={160}
+              loading="lazy"
+            />
+            <img
+              src={seal}
+              alt="Mississippi Band of Choctaw Indians"
+              width={170}
+              height={160}
+              loading="lazy"
+            />
+          </div>
+          <p className="text-md text-center lg:pl-40 xl:pl-24">
+            Copyright &copy; {new Date().getFullYear()}. Mississippi Band of
+            Choctaw Indians. All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <div className="w-full py-3 text-center">
+        <p className="text-neutral-500">
+          Created by{" "}
+          <a
+            href="https://nativeconsult.io"
+            className="text-indigo-400 hover:text-indigo-200"
+            target="_blank"
+          >
+            Native Consulting Services
+          </a>
+        </p>
       </div>
-    </footer>
+    </>
   );
 }

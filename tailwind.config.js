@@ -4,6 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "panel-background":
+          "linear-gradient(rgba(255,0,0,0.15), transparent, transparent), url('/ChoctawIndianFair/img/panel.svg')",
         "red-weave":
           "linear-gradient(135deg, rgba(128,0,0,0.65), transparent, rgba(128,0,0,0.65)), url('/ChoctawIndianFair/img/weave02.svg')",
         rope: "linear-gradient(transparent, transparent, rgba(255,0,0,0.25)), url('/ChoctawIndianFair/img/rope.svg')",

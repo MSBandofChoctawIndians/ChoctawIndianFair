@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Choctaw Indian Fair
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the codebase for the Choctaw Indian Fair website.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Choctaw Indian Fair is an annual event that takes place on our centuries-old homeland in beautiful Choctaw, Mississippi. This project contains the website for the fair, providing information and updates about the event.
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The project has the following structure:
 
-- Configure the top-level `parserOptions` property like this:
+- `public/`: This directory contains static files like images, fonts, and the `index.html` file.
+- `src/`: This directory contains all the source code for the project.
+  - `components/`: This directory contains all the React components used in the project.
+  - `data/`: This directory contains all of the data used in the project.
+  - `routes/`: This directory contains the page components. Each file corresponds to a route in the application.
+  - `index.css`: This directory contains all the CSS styling for the components and pages. See also [Tailwind Config](tailwind.config.js)
+- `package.json`: This file contains the list of project dependencies and scripts.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To update a specific part of the code, navigate to the corresponding file in the project structure. For example, to update the Home page, you would modify the file `src/pages/Home.tsx`.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+To install the project, follow these steps:
+
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+
+## Usage
+
+To start the development server, run `npm start`.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

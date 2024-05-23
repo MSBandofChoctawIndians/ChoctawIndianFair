@@ -7,10 +7,20 @@ html {
   @apply text-white;
 }
 
+/* Ticket Prices */
+.adult-pass {
+  @apply bg-gradient-to-b from-red-700 to-yellow-500;
+}
+.child-pass {
+  @apply bg-gradient-to-b from-emerald-800 to-green-400;
+}
+.student-pass {
+  @apply bg-gradient-to-b from-indigo-800 to-purple-400;
+}
+/* Event Cards */
 .bg-events {
   @apply bg-gradient-to-br from-amber-900/70 via-amber-600 to-amber-900/70;
 }
-
 .bg-competitions {
   @apply bg-gradient-to-br from-red-950 via-red-700 to-red-950;
 }
