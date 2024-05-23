@@ -37,7 +37,7 @@ const Countdown: React.FC = () => {
   }, [countdown]);
 
   return (
-    <div className="mx-auto max-w-2xl pt-24 lg:max-w-none">
+    <div className="mx-auto max-w-2xl px-4 py-24 sm:pb-0 lg:max-w-none">
       <div className="text-center">
         <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl">
           {message}

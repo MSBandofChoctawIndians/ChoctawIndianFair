@@ -25,7 +25,7 @@ const ticketPrices = [
 
 const Pricing: React.FC = () => {
   return (
-    <div className="flex flex-wrap items-start justify-around py-16 sm:py-32">
+    <div className="flex flex-wrap items-start justify-around bg-gradient-to-br from-amber-300/50 via-transparent to-amber-300/50 py-16 sm:py-32">
       <div className="container mx-auto">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
@@ -37,7 +37,7 @@ const Pricing: React.FC = () => {
             {ticketPrices.map((ticket, index) => (
               <div
                 key={index}
-                className={`${ticket.style} flex flex-col rounded-xl border-8 border-neutral-300/30 p-4 sm:p-8`}
+                className={`${ticket.style} flex flex-col rounded border-8 border-neutral-300/30 p-4 sm:p-8`}
               >
                 <dt className="pb-2 font-serif text-4xl font-bold lg:text-5xl">
                   {ticket.name}

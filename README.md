@@ -11,14 +11,17 @@ The Choctaw Indian Fair is an annual event that takes place on our centuries-old
 The project has the following structure:
 
 - `public/`: This directory contains static files like images, fonts, and the `index.html` file.
+  - `img/`: This directory contains all of the static image files.
+  - `pdf/`: This directory contains all of the PDFs forms.
+  - `vid/`: This directory contains all of the static video files used for [BackgroundVid.tsx](src/components/BackgroundVid.tsx).
 - `src/`: This directory contains all the source code for the project.
   - `components/`: This directory contains all the React components used in the project.
   - `data/`: This directory contains all of the data used in the project.
   - `routes/`: This directory contains the page components. Each file corresponds to a route in the application.
-  - `index.css`: This directory contains all the CSS styling for the components and pages. See also [Tailwind Config](tailwind.config.js)
+  - `index.css`: This directory contains all the CSS styling for the components and pages. See also [Tailwind Config](tailwind.config.js) for additional CSS styling classes.
 - `package.json`: This file contains the list of project dependencies and scripts.
 
-To update a specific part of the code, navigate to the corresponding file in the project structure. For example, to update the Home page, you would modify the file `src/pages/Home.tsx`.
+To update a specific part of the code, navigate to the corresponding file in the project structure. For example, to update the Home page, you would modify the file `src/routes/home.tsx`.
 
 ## Installation
 
@@ -30,11 +33,3 @@ To install the project, follow these steps:
 ## Usage
 
 To start the development server, run `npm start`.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)

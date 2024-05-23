@@ -36,3 +36,8 @@ html {
 .bg-stickball {
   @apply bg-gradient-to-br from-neutral-800 via-[#787] to-neutral-800;
 }
+
+/* Sponsor Cards */
+.bg-platinum {
+  @apply bg-gradient-to-br from-gray-500 via-gray-100 to-gray-500;
+}
