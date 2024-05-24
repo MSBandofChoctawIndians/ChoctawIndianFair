@@ -1,3 +1,8 @@
+// Tuesday, July 2, 2024
+
+export const day01day = "TUE";
+export const day01date = "2024-07-02";
+
 export const day01events = [
   {
     name: "Opening Ceremonies & Fallen Tushka Ceremony",

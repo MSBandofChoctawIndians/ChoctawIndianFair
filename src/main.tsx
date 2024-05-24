@@ -8,21 +8,22 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Root from "./routes/root";
-import Home from "./routes/home";
+import Layout from "./routes/layout";
+import Home from "./routes/Home";
 import Events from "./routes/Events";
 import ErrorPage from "./error-page";
+import Culture from "./routes/Culture";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/ChoctawIndianFair/"
-      element={<Root />}
+      element={<Layout />}
       errorElement={<ErrorPage />}
     >
       <Route path="/ChoctawIndianFair/" element={<Home />} />
       <Route path="/ChoctawIndianFair/events" element={<Events />} />
-      <Route path="/ChoctawIndianFair/culture" element={<h2>Culture</h2>} />
+      <Route path="/ChoctawIndianFair/culture" element={<Culture />} />
       <Route path="/ChoctawIndianFair/family" element={<h2>Family Fun</h2>} />
       <Route path="/ChoctawIndianFair/stickball" element={<h2>Stickball</h2>} />
       <Route path="/ChoctawIndianFair/pageant" element={<h2>Pageant</h2>} />

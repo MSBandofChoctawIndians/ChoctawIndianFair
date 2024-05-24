@@ -45,25 +45,25 @@ const Countdown: React.FC = () => {
       </div>
       {countdown > 0 ? (
         <dl className="mx-2 mt-16 grid gap-1 overflow-hidden rounded-2xl text-center sm:mx-0 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col border-2 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8 hover:from-black hover:via-neutral-800 hover:to-black">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black p-8">
             <dt className="text-5xl font-bold">{days}</dt>
             <dd className="font-serif text-xl font-bold text-neutral-400">
               Days
             </dd>
           </div>
-          <div className="flex flex-col border-2 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8 hover:from-black hover:via-neutral-800 hover:to-black">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black p-8">
             <dt className="text-5xl font-bold">{hours}</dt>
             <dd className="font-serif text-xl font-bold text-neutral-400">
               Hours
             </dd>
           </div>
-          <div className="flex flex-col border-2 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8 hover:from-black hover:via-neutral-800 hover:to-black">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black p-8">
             <dt className="text-5xl font-bold">{minutes}</dt>
             <dd className="font-serif text-xl font-bold text-neutral-400">
               Minutes
             </dd>
           </div>
-          <div className="flex flex-col border-2 border-neutral-300/20 bg-gradient-to-br from-black/50 via-neutral-800/70 to-black/50 p-8 hover:from-black hover:via-neutral-800 hover:to-black">
+          <div className="flex flex-col border-8 border-neutral-300/20 bg-gradient-to-br from-black via-neutral-800 to-black p-8">
             <dt className="text-5xl font-bold">{seconds}</dt>
             <dd className="font-serif text-xl font-bold text-neutral-400">
               Seconds

@@ -8,7 +8,7 @@ export default function Footer() {
     <>
       <SponsorCarousel />
       <DiamondBorder />
-      <footer className="bg-panel-background mb-2 bg-center sm:mb-0">
+      <footer className="bg-panel-background bg-center pb-2 sm:pb-0">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between lg:flex-row">
           <div className="my-4 flex gap-5">
             <img
@@ -27,12 +27,18 @@ export default function Footer() {
             />
           </div>
           <p className="text-md text-center lg:pl-40 xl:pl-24">
-            Copyright &copy; {new Date().getFullYear()}. Mississippi Band of
-            Choctaw Indians. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()}. {""}
+            <a
+              href="https://www.choctaw.org"
+              className="text-yellow-200 hover:text-yellow-100"
+            >
+              Mississippi Band of Choctaw Indians
+            </a>
+            . All rights reserved.
           </p>
         </div>
       </footer>
-      <div className="w-full py-3 text-center">
+      <div className="w-full py-4 text-center">
         <p className="text-neutral-500">
           Created by{" "}
           <a

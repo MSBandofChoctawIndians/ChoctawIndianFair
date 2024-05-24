@@ -28,22 +28,33 @@ export default function Events() {
 
   const [activeTab, setActiveTab] = useState(() => {
     const currentDate = new Date();
-    const lastTabDate = new Date(tabs[tabs.length - 1].date);
-    return currentDate >= lastTabDate ? tabs.length - 1 : 0;
+    currentDate.setHours(0, 0, 0, 0);
+
+    const day01date = new Date(tabs[0].date);
+    day01date.setHours(0, 0, 0, 0);
+
+    const day10date = new Date(tabs[9].date);
+    day10date.setHours(0, 0, 0, 0);
+
+    if (currentDate < day01date) {
+      return 0;
+    } else if (currentDate > day10date) {
+      return 9;
+    } else {
+      const currentTabIndex = tabs.findIndex(
+        (tab) => new Date(tab.date).setHours(0, 0, 0, 0) === +currentDate,
+      );
+      return currentTabIndex !== -1 ? currentTabIndex : 0;
+    }
   });
+
+  const handleTabClick = (index: number) => {
+    setActiveTab(index);
+  };
 
   const [activeCategory, setActiveCategory] = useState(
     new Array(categories.length).fill(false),
   );
-
-  const handleTabClick = (index: number) => {
-    const currentDate = new Date();
-    const tabDate = new Date(tabs[index].date);
-
-    if (currentDate <= tabDate) {
-      setActiveTab(index);
-    }
-  };
 
   const handleCategoryClick = (index: number) => {
     setActiveCategory((prevState) =>
@@ -52,9 +63,9 @@ export default function Events() {
   };
 
   return (
-    <div className="bg-red-weave bg-size-weave bg-repeat">
+    <div className="bg-red-weave bg-size-weave bg-repeat py-3">
       <div className="container mx-auto">
-        <div className="py-3">
+        <div className="pb-3">
           <img
             src="./img/event-banner-01.jpg"
             alt="Event banner"
