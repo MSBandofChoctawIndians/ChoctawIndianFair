@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Layout from "./routes/layout";
-import Home from "./routes/Home";
+import Home from "./routes/Home_";
 import Events from "./routes/Events";
 import ErrorPage from "./error-page";
 import Culture from "./routes/Culture";
