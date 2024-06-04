@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
       </footer>
       <div className="w-full py-4 text-center">
-        <p className="text-neutral-500">
+        <p className="text-neutral-200">
           Created by{" "}
           <a
             href="https://nativeconsult.io"
