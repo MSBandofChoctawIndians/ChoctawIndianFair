@@ -1,0 +1,21 @@
+- url: https://www.hnrsupply.com
+  file: singer
+  alt: Hotel & Restaurant Supply
+- url: https://merchantsfoodservice.com
+  file: merchants
+  alt: Merchants Food Service
+- url: https://www.performancefoodservice.com
+  file: performancefood
+  alt: Performance Food Services
+- url: https://www.ajg.com
+  file: gallagher
+  alt: AJ Gallagher
+- url: https://www.bcbsms.com
+  file: bluecross
+  alt: Blue Cross Blue Shield
+- url: http://www.pileum.com
+  file: pileum
+  alt: Pileum
+- url: https://www.chahtaholdingroup.com/ikbi
+  file: ikbi
+  alt: IKBI

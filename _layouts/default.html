@@ -1,0 +1,145 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="{{ site.baseurl }}/assets/img/logos/icon.webp" />
+    <link
+      rel="shortcut icon"
+      href="{{ site.baseurl }}/assets/img/logos/icon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{{ site.baseurl }}/assets/img/logos/icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#212529" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212529" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="We invite you to join us July 12-15 for our 73rd annual Choctaw Indian Fair.
+        The fair takes place on our centuries-old homeland in beautiful Choctaw, Mississippi."
+    />
+    <meta
+      name="keywords"
+      content="Choctaw Indian Fair, World Series Stickball, Princess Pageant, Rez Run, Iron Warrior"
+    />
+    <meta name="author" content="Sonny Mattera, sonny.mattera@choctaw.org" />
+    <meta
+      property="og:title"
+      content="Choctaw Indian Fair | {{ page.title }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.choctawindianfair.com/assets/img/meta/{{ page.meta }}.jpeg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta
+      property="og:url"
+      content="https://www.choctawindianfair.com{{ page.url }}"
+    />
+    <meta
+      property="og:description"
+      content="We invite you to join us July 12-15 for our 73rd annual Choctaw Indian Fair.
+        The fair takes place on our centuries-old homeland in beautiful Choctaw, Mississippi."
+    />
+    {% if page.title %}
+    <title>Choctaw Indian Fair | {{ page.title }}</title>
+    {% else %}
+    <title>Choctaw Indian Fair</title>
+    {% endif %}
+    <script
+      async
+      src="https://tag.simpli.fi/sifitag/fec11bc9-9b2e-45c6-8452-ca99d2b4eae2"
+    ></script>
+    <script
+      async
+      src="https://tag.simpli.fi/sifitag/b96daa7e-79f9-4041-8eb7-439186372be4"
+    ></script>
+    <script src="/assets/js/buyTickets.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Choctaw Indian Fair",
+        "description": "We invite you to join us July 10-13 for our 74th annual Choctaw Indian Fair. The fair takes place on our centuries-old homeland in beautiful Choctaw, Mississippi.",
+        "image": "https://www.choctawindianfair.com/assets/img/CIF-bg.webp",
+        "startDate": "2024-07-10T10:00",
+        "endDate": "2024-07-14T02:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Choctaw Indian Fair",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "101 Industrial Rd",
+            "addressLocality": "Choctaw",
+            "addressRegion": "MS",
+            "postalCode": "39350",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.77912149740169",
+            "longitude": "-89.22480695967303"
+          }
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Adult Season Pass",
+            "price": "20",
+            "priceCurrency": "USD",
+            "validFrom": "2024-06-10",
+            "url": "https://www.etix.com/ticket/p/6710779/choctaw-indian-fair-pearl-river-choctaw-indian-fair",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Adult Day Pass",
+            "price": "12",
+            "priceCurrency": "USD",
+            "validFrom": "2024-06-10",
+            "url": "https://www.etix.com/ticket/p/6710779/choctaw-indian-fair-pearl-river-choctaw-indian-fair",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Student Season Pass",
+            "price": "10",
+            "priceCurrency": "USD",
+            "validFrom": "2024-06-10",
+            "url": "https://www.etix.com/ticket/p/6710779/choctaw-indian-fair-pearl-river-choctaw-indian-fair",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Student Day Pass",
+            "price": "7",
+            "priceCurrency": "USD",
+            "validFrom": "2024-06-10",
+            "url": "https://www.etix.com/ticket/p/6710779/choctaw-indian-fair-pearl-river-choctaw-indian-fair",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    {% include nav.html %} {{ content }} {% include footer.html %}
+  </body>
+</html>

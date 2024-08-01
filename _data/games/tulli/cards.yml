@@ -1,0 +1,59 @@
+- game: 1
+  date: Sat, Jul 06
+  hour: 6:00 PM
+  team1: nanih waiya
+  team1color: nanihwaiya
+  team1score: 3
+  team2: bók Čito
+  team2color: bokcito
+  team2score: 10
+
+- game: 2
+  date: Mon, Jul 08
+  hour: 6:00 PM
+  team1: koni hata himitah
+  team1color: konihata
+  team1score: 8
+  team2: tiak hikíya
+  team2color: tiakhikiya
+  team2score: 0
+
+- game: 3
+  date: Tue, Jul 09
+  hour: 6:00 PM
+  team1: Beaver Dam
+  team1color: beaverdam
+  team1score: 6
+  team2: ittibátóli
+  team2color: ittibatoli
+  team2score: 0
+
+- game: 4
+  date: Wed, Jul 10
+  hour: 5:00 PM
+  team1: pearl river
+  team1color: pearlrivertulli
+  team1score: 3
+  team2: bók Čito
+  team2color: bokcito
+  team2score: 7
+
+- game: 5
+  date: Thu, Jul 11
+  hour: 6:00 PM
+  team1: koni hata himitah
+  team1color: konihata
+  team1score: 0
+  team2: beaver dam
+  team2color: beaverdam
+  team2score: 4
+
+- game: 6
+  date: Fri, Jul 12
+  hour: 9:00 PM
+  team1: bók Čito
+  team1color: bokcito
+  team1score: 3
+  team2: beaver dam
+  team2color: beaverdam
+  team2score: 0

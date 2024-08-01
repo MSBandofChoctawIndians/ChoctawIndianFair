@@ -1,0 +1,25 @@
+- url: https://www.pearlriverresort.com
+  file: pearlriver2
+  alt: Pearl River Resort
+  class: active
+- url: https://yates.doitbest.com
+  file: yates
+  alt: Yates
+- url: https://www.trustmark.com
+  file: trustmark
+  alt: Trustmark Bank
+- url: http://pryormorrow.com
+  file: pryormorrow
+  alt: Pryor Morrow
+- url: http://willisengineering.net
+  file: willisengineering
+  alt: Willis Engineering
+- url: https://www.unum.com
+  file: sis
+  alt: Walt Schrimpf (SIS-UNUM)
+- url: https://www.fabicash.com
+  file: fabi
+  alt: FABI (First American Bank)
+- url: https://www.choctawhealthcenter.org
+  file: chc
+  alt: Choctaw Health Center

@@ -1,0 +1,15 @@
+<h5>NANIH WAIYA</h5>
+<h6>
+  COACHES: {{ site.data.rosters.push.nanihwaiya.coaches |
+  array_to_sentence_string }}
+</h6>
+<table class="table table-dark table-striped">
+  <tbody>
+    {% for player in site.data.rosters.push.nanihwaiya.players %}
+    <tr>
+      <th scope="row">{{ player.num }}</th>
+      <td>{{ player.name }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

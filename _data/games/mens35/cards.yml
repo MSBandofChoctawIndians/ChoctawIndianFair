@@ -1,0 +1,49 @@
+- game: 1
+  date: Wed, Jul 03
+  hour: 7:00 PM
+  team1: koni hata
+  team1color: konihata
+  team1score: 4
+  team2: bók Čito
+  team2color: bokcito
+  team2score: 1
+
+- game: 2
+  date: Fri, Jul 05
+  hour: 7:00 PM
+  team1: oka homma
+  team1color: okahomma
+  team1score: 2
+  team2: pearl river
+  team2color: pearlriver
+  team2score: 3
+
+- game: 3
+  date: Mon, Jul 08
+  hour: 7:00 PM
+  team1: beaver dam
+  team1color: beaverdam
+  team1score: 2
+  team2: koni hata
+  team2color: konihata
+  team2score: 3
+
+- game: 4
+  date: Mon, Jul 08
+  hour: 8:00 PM
+  team1: pearl river
+  team1color: pearlriver
+  team1score: 2
+  team2: tvshkahomma
+  team2color: tvshkahomma
+  team2score: 1
+
+- game: 5
+  date: Fri, Jul 12
+  hour: 10:00 PM
+  team1: koni hata
+  team1color: konihata
+  team1score: 5
+  team2: pearl river
+  team2color: pearlriver
+  team2score: 0

@@ -1,0 +1,6 @@
+<li class="nav-item" role="presentation" style="margin: 5px; border: solid 1px #fea; border-radius: .25rem;">
+  <button class="nav-link {% if cachedNow <= include.date %}active{% endif %}" id="{{ include.day }}-tab"
+    data-bs-toggle="tab" data-bs-target="#{{ include.day }}" type="button" role="tab" aria-controls="{{ include.day }}"
+    aria-selected="true">{{ include.date | date: "%a" }}<br>{{ include.date | date: "%b" }}<br><span
+      style="font-size:60px">{{ include.date | date: "%d" }}</span></button>
+</li>

@@ -1,0 +1,99 @@
+- game: 1
+  date: Wed, Jul 03
+  hour: 8:00 PM
+  team1: fani lakna ohóyo
+  team1color: fanilaknaohoyo
+  team1score: 0
+  team2: bók Čito ohóyo
+  team2color: bokcito
+  team2score: 11
+
+- game: 2
+  date: Wed, Jul 03
+  hour: 9:00 PM
+  team1: ohóyo bihhi ayásha
+  team1color: bihhiayasha
+  team1score: 0
+  team2: tvshkahomma ohóyo
+  team2color: tvshkahommaohoyo
+  team2score: 3
+
+- game: 3
+  date: Fri, Jul 05
+  hour: 8:00 PM
+  team1: natives
+  team1color: natives
+  team1score: 2
+  team2: koni hata ohóyo
+  team2color: konihata
+  team2score: 5
+
+- game: 4
+  date: Fri, Jul 05
+  hour: 9:00 PM
+  team1: lady war party
+  team1color: warparty
+  team1score: 0
+  team2: pearl river
+  team2color: pearlriver
+  team2score: 11
+
+- game: 5
+  date: Sat, Jul 06
+  hour: 7:00 PM
+  team1: oka homma ohóyo
+  team1color: okahomma
+  team1score: 1
+  team2: bók Čito ohóyo
+  team2color: bokcito
+  team2score: 5
+
+- game: 6
+  date: Sat, Jul 06
+  hour: 8:00 PM
+  team1: beaver dam
+  team1color: beaverdam
+  team1score: 0
+  team2: tvshkahomma ohóyo
+  team2color: tvshkahommaohoyo
+  team2score: 1
+
+- game: 7
+  date: Sat, Jul 06
+  hour: 9:00 PM
+  team1: lady warriors
+  team1color: warriors
+  team1score: 0
+  team2: koni hata ohóyo
+  team2color: konihata
+  team2score: 9
+
+- game: 8
+  date: Tue, Jul 09
+  hour: 7:00 PM
+  team1: bók Čito ohóyo
+  team1color: bokcito
+  team1score: 2
+  team2: pearl river
+  team2color: pearlriver
+  team2score: 1
+
+- game: 9
+  date: Tue, Jul 09
+  hour: 8:00 PM
+  team1: tvshkahomma ohóyo
+  team1color: tvshkahommaohoyo
+  team1score: 1
+  team2: koni hata ohóyo
+  team2color: konihata
+  team2score: 2
+
+- game: 10
+  date: Sat, Jul 13
+  hour: 8:30 PM
+  team1: bók Čito ohóyo
+  team1color: bokcito
+  team1score: 1
+  team2: koni hata ohóyo
+  team2color: konihata
+  team2score: 0

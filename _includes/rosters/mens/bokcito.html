@@ -1,0 +1,15 @@
+<h5>BÓK ČITO</h5>
+<h6>
+  COACHES: {{ site.data.rosters.mens.bokcito.coaches | array_to_sentence_string
+  }}
+</h6>
+<table class="table table-dark table-striped">
+  <tbody>
+    {% for player in site.data.rosters.mens.bokcito.players %}
+    <tr>
+      <th scope="row">{{ player.num }}</th>
+      <td>{{ player.name }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

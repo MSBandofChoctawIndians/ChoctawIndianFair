@@ -1,0 +1,95 @@
+- url: https://www.bcleanllc.com
+  file: bclean
+  alt: B Clean
+- url: https://www.robertsonproduce.com/
+  file: robertson
+  alt: Robertson Produce
+- url: https://tsihd.com
+  file: tsi
+  alt: Technical Security Integration, Inc.
+- url: #
+  file: jmcomm
+  alt: Jaime Martinez Communications
+- url: https://www.woodfruitticher.com
+  file: woodfruit
+  alt: Wood Fruitticher
+- url: http://www.becomminc.com
+  file: bne
+  alt: B&E Communications
+- url: #
+  file: erg
+  alt: Engineering Resource Group
+- url: http://www.interpestinc.com
+  file: interpest
+  alt: Interpest
+- url: https://www.mitchellsigns.com
+  file: mitchell
+  alt: Mitchell Signs
+- url: https://www.statesystemsinc.com
+  file: ssi
+  alt: State Systems Inc.
+- url: https://www.trane.com/index.html
+  file: trane
+  alt: Trane
+- url: https://www.normanroofing.com
+  file: normanroofing
+  alt: Norman Roofing
+- url: https://www.venusgroup.com
+  file: venus
+  alt: Venus Group
+- url: https://www.andersonregional.org
+  file: anderson
+  alt: Anderson Regional Hospital
+- url: https://www.benchmarkms.com
+  file: benchmark
+  alt: Benchmark Construction
+- url: https://www.centerpointenergy.com/
+  file: centerpoint
+  alt: Centerpoint Energy
+- url: https://www.facebook.com/DandWTireandMuffler/
+  file: dnw
+  alt: D&W Tire & Muffler Center
+- url: https://www.facebook.com/Matt-Boatner-Construction
+  file: mbc
+  alt: Matt Boatner Construction
+- url: https://www.facebook.com/williamsbrothersgeneralstore
+  file: williamsbrothers
+  alt: Williams Brothers
+- url: http://www.pigglywiggly.com/store/16851-hwy-21-southsebastopolms
+  file: pigglywiggly
+  alt: Piggly Wiggly - Sebastopol
+- url: https://jsico.com
+  file: jsicomm
+  alt: JSI Communications
+- url: https://www.citypapercompany.com
+  file: citypaper
+  alt: City Paper Company
+- url: https://www.atgconsults.com
+  file: appliedtech
+  alt: Applied Technology Group
+- level: bronze
+  url: https://www.neshobageneral.com
+  file: neshobageneral
+  alt: Neshoba General Hospital
+- url: https://www.petrey.com
+  file: petrey
+  alt: W.L. Petrey
+- url: https://www.servpro.com/locations/ms/servpro-of-northeast-delta-lands
+  file: servpro
+  alt: ServePro of Northeast Delta Lands
+- url: https://www.gopurvis.com
+  file: purvis
+  alt: Purvis Business Machines
+# APM Construction
+- url: https://www.johnestephenschapel.com
+  file: johnstephens
+  alt: John Stephens Funeral Services
+- url: https://www.ascensionpaperproducts.com/catalog/
+  file: ascension
+  alt: Ascension Paper Products
+- url: https://www.usfoods.com
+  file: usfoods
+  alt: US Foods
+- url: https://www.jacksoncom.com
+  file: jacksoncomm
+  alt: Jackson Communications

@@ -1,0 +1,43 @@
+<div
+  class="modal fade"
+  id="womens-g9"
+  tabindex="-1"
+  aria-labelledby="womens-g9Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div
+      class="modal-content card-black-border"
+      style="
+        background: linear-gradient(
+          to bottom,
+          rgba(20, 20, 20, 1),
+          rgba(80, 80, 80, 1)
+        );
+      "
+    >
+      <div class="modal-header">
+        <h5 class="modal-title" id="womens-g9Label">
+          WOMEN'S - GAME 9 ROSTERS
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6">
+            {% include rosters/womens/blank.html %}
+          </div>
+          <hr class="d-block d-md-none" />
+          <div class="col-12 col-sm-6">
+            {% include rosters/womens/blank.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

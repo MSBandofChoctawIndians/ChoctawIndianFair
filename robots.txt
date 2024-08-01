@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /forms/
+
+User-agent: AdsBot-Google
+Disallow: /forms/
+
+Sitemap: https://www.choctawindianfair.com/sitemap.xml
