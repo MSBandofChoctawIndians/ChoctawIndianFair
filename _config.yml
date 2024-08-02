@@ -6,3 +6,5 @@ plugins:
 
 whitelist:
   - jekyll-redirect-from
+
+baseurl: "/ChoctawIndianFair"
